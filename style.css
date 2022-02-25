@@ -1,0 +1,26 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+#container{
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	grid-template-rows: 0.9fr 4fr;
+	height: 100vh;
+}
+
+#header{
+	background-color: #f9f8f8;
+	box-shadow: 0 10px 10px -10px #cfbdd6;
+	z-index: 10;
+}
+
+#sidebar{
+	background-color: #aa6da3;
+	grid-row: 1 / 3;
+}
+
+#content{
+	background-color: #ece2f0;
+}
