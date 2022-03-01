@@ -23,6 +23,8 @@ body{
 h1{
 	font-family: 'fugaz_oneregular', sans-serif;
 	font-weight: lighter;
+	color: white;
+	padding-left: 40px;
 }
 
 #container{
@@ -52,8 +54,8 @@ h1{
 
 li{
 	list-style: none;
-	color: black;
-	padding-bottom: 15px;
+	color: white;
+	padding-bottom: 20px;
 	font-weight: bold;
 }
 
@@ -61,12 +63,11 @@ a{
 	text-decoration: none;
 }
 
-.dashboard{
-
-	display: flex;
-	justify-content: center;
-}
-
-.nav-items, .nav-items-secondary{
-
+img{
+	vertical-align: middle;
+  display: inline-block;
+	padding-right: 20px;
+	padding-bottom: 4px;
+	height: 20px;
+	filter: invert(100%) sepia(80%) saturate(2%) hue-rotate(290deg) brightness(111%) contrast(101%);
 }
