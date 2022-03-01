@@ -1,6 +1,28 @@
+@font-face {
+  font-family: 'robotoregular';
+  src: url('roboto-regular-webfont.woff2') format('woff2'),
+       url('roboto-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'fugaz_oneregular';
+  src: url('fugazone-regular-webfont.woff2') format('woff2'),
+       url('fugazone-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body{
 	margin: 0;
 	padding: 0;
+	font-family:'robotoregular', sans-serif;
+}
+
+h1{
+	font-family: 'fugaz_oneregular', sans-serif;
+	font-weight: lighter;
 }
 
 #container{
@@ -19,8 +41,32 @@ body{
 #sidebar{
 	background-color: #aa6da3;
 	grid-row: 1 / 3;
+	display: grid;
+	grid-template-rows: 0.5fr 3fr 4fr;
+	
 }
 
 #content{
 	background-color: #ece2f0;
+}
+
+li{
+	list-style: none;
+	color: black;
+	padding-bottom: 15px;
+	font-weight: bold;
+}
+
+a{
+	text-decoration: none;
+}
+
+.dashboard{
+
+	display: flex;
+	justify-content: center;
+}
+
+.nav-items, .nav-items-secondary{
+
 }
