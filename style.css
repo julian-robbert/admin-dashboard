@@ -20,7 +20,7 @@ body{
 	font-family:'robotoregular', sans-serif;
 }
 
-h1{
+.dashboard-logo{
 	font-family: 'fugaz_oneregular', sans-serif;
 	font-weight: lighter;
 	color: white;
@@ -29,17 +29,20 @@ h1{
 
 #container{
 	display: grid;
-	grid-template-columns: 1fr 4fr;
+	grid-template-columns: 250px 4fr;
 	grid-template-rows: 0.9fr 4fr;
-	height: 100vh;
+	height: 100%;
 }
 
 #sidebar{
 	background-color: #aa6da3;
 	grid-row: 1 / 3;
 	display: grid;
-	grid-template-rows: 0.5fr 3fr 4fr;
-	
+	grid-template-rows: 0.5fr 4fr;
+}
+
+#settings-icon{
+	padding-top: 30px;
 }
 
 #content{
@@ -99,7 +102,7 @@ label > img{
 .profile-pic{
 	height: 50px;
 	width: 50px;
-	border-radius: 50px;
+	border-radius: 50%;
 }
 
 .profile-container{
@@ -116,4 +119,84 @@ label > img{
 
 a:visited{
 	color: black;
+}
+
+.greeting-container{
+	display: flex;
+	gap: 20px;
+	padding-bottom: 10px;
+}
+
+.greeting-text{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.greeting-small{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.greeting-large{
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.profile-pic-bigger{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	margin-left: 40px;
+}
+
+button{
+	width: 80px;
+	height: 35px;
+	border-radius: 30px;
+	color: white;
+	background-color: #aa6da3;
+	border: none;
+	font-weight: bold;
+}
+
+.buttons-container{
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	gap: 25px;
+	padding-right: 40px;
+}
+
+.card{
+	border: 1px solid black;
+	height: 200px;
+	width: 350px;
+	border-radius: 15px;
+}
+
+#content{
+	display: flex;
+}
+
+.cards{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	padding: 15px;
+	gap: 15px;
+}
+
+.side-card{
+	border: 1px solid black;
+	height: 300px;
+	width: 250px;
+	border-radius: 15px;
+}
+
+.side-content{
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	padding: 15px;
+	gap: 15px;
 }
